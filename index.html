@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:site_name" content="Adventureson is a band"/>
+        <meta property="og:title" content="Adventureson is a band"/>
+        <meta property="og:url" content="https://www.adventureson.band"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://adventureson.band/adventureson-card.jpg">
+        <meta property="og:description" content="ambient experimental music soundtracks etcetera"/>
+        <meta itemprop="name" content="Adventureson is a band"/>
+        <meta itemprop="headline" content="Adventureson is a band"/>
+        <meta itemprop="description" content="ambient experimental music soundtracks etcetera"/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Adventureson is a band"/>
+        <meta name="twitter:url" content="https://www.adventureson.band"/>
+        <meta name="twitter:description" content="ambient experimental music soundtracks etcetera"/>
+        <meta name="twitter:site" content="@kevinknielsen"/>
+        <meta name="twitter:image" content="https://adventureson.band/adventureson-card.jpg">
+        <title>Kevin's Cloud </title>
+        <link rel="icon" href="/favicon.ico">
+        <!-- 32×32 -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link rel="stylesheet" media="all" href="style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+
+                $("section").mouseover(function() {
+                    $(this).addClass('zfix');
+                }).mouseout(function() {
+                    $(this).removeClass('zfix');
+                });
+
+                $('.overlay').click(function() {
+                    $('.active').removeClass('active');
+                    $('#twitter').removeClass('linkme');
+
+                });
+
+                $("#ghost").hover(function() {
+                    $(this).addClass('hover');
+                    $('#ghostbones').addClass('hover');
+                }, function() {
+                    $(this).removeClass('hover');
+                    $('#ghostbones').removeClass('hover');
+                });
+
+                $('#ghost').click(function() {
+                    $('#ghostbones').toggleClass('active');
+                    $(this).toggleClass('active');
+                    $('#twitter').addClass('linkme');
+                });
+
+                $("#do").hover(function() {
+                    $(this).addClass('hover');
+                    $('#doom').addClass('hover');
+                }, function() {
+                    $(this).removeClass('hover');
+                    $('#doom').removeClass('hover');
+                });
+
+                $('#do').click(function() {
+                    $('#doom').toggleClass('active');
+                    $(this).toggleClass('active');
+                    $('#twitter').addClass('linkme');
+
+                });
+
+                $('img').click(function() {
+                    $('.active').removeClass('active');
+                    $('#twitter').removeClass('linkme');
+
+                });
+
+                $('.closeme').click(function() {
+                    $('.active').removeClass('active');
+                    $('#twitter').removeClass('linkme');
+
+                });
+
+                $("img").hover(function() {
+                    $(this).addClass('imghov');
+                }, function() {
+                    $(this).removeClass('imghov');
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <h3>Elsewhere</h3>
+        <div id="twitter">
+          <a href="https://www.twitter.com/kevinknielsen" target="_blank">
+            <i class="fa fa-twitter fa-4x icon-3d"></i>
+          </a>
+          <a href="https://github.com/kevinknielsen" target="_blank">
+            <i class="fa fa-github fa-4x icon-3d"></i>
+          </a>
+          <a href="https://hello:kevinknielsen@gmail.com" target="_blank">
+            <i class="fa fa-envelope fa-4x icon-3d"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kevinknielsen/" target="_blank">
+            <i class="fa fa-linkedin fa-4x icon-3d"></i>
+          </a>
+      </div>
+    </a>
+        <section id="ghostbones">
+            <a class="closeme">+</a>
+            <div class="overlay">spooky</div>
+            <img src="https://adventureson.band/adventureson-ghostbones.webp" alt="Adventureson's Ghost Bones"/>
+            <h2 id="ghost" style="font-family:NeutralFace-Bold;">Work</h2>
+            <ul>
+                <li>
+                    <a href="https://adventureson.bandcamp.com/album/ghost-bones">Bandcamp</a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/album/6hAgBq1IaZwM0spLD9CLUW">Spotify</a>
+                </li>
+                <li>
+                    <a href="https://music.apple.com/us/album/ghost-bones/1548981192">Apple Music</a>
+                </li>
+            </ul>
+            <p>
+                Perhaps you're not sitting in an office or working from home or on your phone or in class on a computer but instead on a mountain looking at another mountain that you need to climb. You're a person of adventure, after all. The weather is magical, perfect; warm breezes when you're cold and gentle rain when you're hot. It there danger? Sure, but nothing you can't handle. What you've experienced in life has given you more than you need to turn this journey into something profound. Let's go. <small>54 Minutes &nbsp;2021</small>
+            </p>
+        </section>
+        <section id="doom">
+            <a class="closeme">+</a>
+            <div class="overlay">spooky</div>
+            <img src="https://adventureson.band/adventureson-doomasisaynotasidoom-small.webp" alt="Adventureson's Doom As I Say Not As I Doom"/>
+            <h2 id="do" style="font-family:NeutralFace-Bold;">Play</h2>
+            <ul>
+                <li>
+                    <a href="https://adventureson.bandcamp.com/album/doom-as-i-say-not-as-i-doom">Bandcamp</a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/album/6F5HlsTy0eoU5o19PTKOy5">Spotify</a>
+                </li>
+                <li>
+                    <a href="https://music.apple.com/us/album/doom-as-i-say-not-as-i-doom/1558572667">Apple Music</a>
+                </li>
+            </ul>
+            <p>
+                Maybe it's the pandemic or maybe it's the politics or maybe it's the planet that's killing us as a result of us killing it. It's DOOM from here on out, folks. If you want something bright and happy, maybe give your local lite radio a try. Unlike "Ghost Bones" this collection of songs is  darker. It's anxious but not (entirely) unpleasant. Tense but with a hint of hope. Drums dominate half of the tracks and time signatures vary. The goal was to unsettle but not unhinge.  <small>27 Minutes  &nbsp;2021</small>
+            </p>
+        </section>
+    </body>
+</html>
