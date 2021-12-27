@@ -115,7 +115,7 @@ section {
 }
 
 #ghostbones {
-  background-image: url("https://adventureson.band/adventureson-ghostbones-blur.jpg") ;
+  background-image: url("https://i.ibb.co/0ykfjnM/222.png") ;
   right: 50vw;
   left: 0;
 }
@@ -125,7 +125,7 @@ section {
 }
 
 #doom {
-  background-image: url("https://adventureson.band/adventureson-doomasisaynotasidoom-blur.jpg") ;
+  background-image: url("https://adventureson.band/adventureson-ghostbones-blur.jpg") ;
   left: 50vw;
   right: 0;
 }
@@ -660,4 +660,49 @@ section img {
 @font-face {
   font-family: NeutralFace-Bold;
   src: url("NeutralFace-Bold.otf") format("opentype");
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
